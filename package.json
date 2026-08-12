@@ -1,0 +1,28 @@
+{
+  "name": "bytebreak-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ByteBreak monorepo — the entertainment layer for developers",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' --filter './games/*' build",
+    "test": "pnpm exec vitest run",
+    "typecheck": "pnpm -r --filter './packages/*' --filter './games/*' typecheck",
+    "clean": "pnpm -r --filter './packages/*' --filter './games/*' clean && rm -rf node_modules",
+    "bundle": "pnpm --filter bytebreak build",
+    "install:global": "bash scripts/install-global.sh",
+    "doctor": "pnpm --filter @bytebreak/runtime exec node dist/cli-main.js doctor",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Runtime / local data
+.bytebreak/
+.bytebreak-smoke/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# Coverage / test
+coverage/
+.nyc_output/
+.vitest/
+
+# Pack artifacts
+*.tgz
+.cache/
+tmp/
+temp/

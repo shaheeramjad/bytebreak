@@ -1,0 +1,55 @@
+{
+  "name": "bytebreak",
+  "version": "0.1.4",
+  "description": "The entertainment layer for developers — install and play instantly",
+  "type": "module",
+  "bin": {
+    "bytebreak": "./bin/bytebreak.cjs"
+  },
+  "main": "./dist/cli.cjs",
+  "files": [
+    "bin",
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "bytebreak",
+    "developer",
+    "games",
+    "cli",
+    "terminal",
+    "entertainment",
+    "coding-games"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytebreak/bytebreak"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "prepack": "node build.mjs",
+    "start": "node dist/cli.js",
+    "typecheck": "node -e \"process.exit(0)\"",
+    "test": "node -e \"process.exit(0)\"",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@bytebreak/runtime": "workspace:*",
+    "@bytebreak/daemon": "workspace:*",
+    "@bytebreak/shared": "workspace:*",
+    "@bytebreak/local-store": "workspace:*",
+    "@bytebreak/event-engine": "workspace:*",
+    "@bytebreak/game-engine": "workspace:*",
+    "@bytebreak/plugin-sdk": "workspace:*",
+    "@bytebreak/bug-blitz": "workspace:*",
+    "@bytebreak/output-rush": "workspace:*",
+    "@bytebreak/sql-sprint": "workspace:*",
+    "@bytebreak/docker-dash": "workspace:*",
+    "@bytebreak/git-arena": "workspace:*",
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@bytebreak/runtime",
+  "version": "0.1.0",
+  "description": "ByteBreak runtime CLI — install, auth, daemon, plugins",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "bytebreak": "./dist/cli-main.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/cli-main.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@bytebreak/shared": "workspace:*",
+    "@bytebreak/local-store": "workspace:*",
+    "@bytebreak/event-engine": "workspace:*",
+    "@bytebreak/daemon": "workspace:*",
+    "commander": "^12.1.0",
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

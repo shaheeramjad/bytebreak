@@ -7,7 +7,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # or
 source ~/.bashrc
 
-bytebreak version    # expect 0.1.4+
+bytebreak version    # expect 0.1.5+
 ```
 
 If missing or outdated:
@@ -138,7 +138,7 @@ Note: shell hooks always install against **real** `$HOME/.bytebreak` (not temp h
 
 | Check | Command | Expected |
 |-------|---------|----------|
-| Version | `bytebreak version` | `0.1.4`+ |
+| Version | `bytebreak version` | `0.1.5`+ |
 | Health | `bytebreak doctor` | Healthy |
 | Suggest | `limit` + `hook peek` | Generic agent tip |
 | Play | `bytebreak` | Game + XP |

@@ -1,7 +1,7 @@
 /** Product identity */
 export const PRODUCT_NAME = 'ByteBreak';
 export const PRODUCT_TAGLINE = 'The entertainment layer for developers.';
-export const PRODUCT_VERSION = '0.1.4';
+export const PRODUCT_VERSION = '0.1.5';
 
 /** Default API / cloud */
 export const DEFAULT_API_URL = 'https://api.bytebreak.dev';

@@ -9,7 +9,7 @@
 ## Setup
 
 ```bash
-git clone <repo> && cd ByteBreak
+git clone https://github.com/shaheeramjad/bytebreak.git && cd bytebreak
 pnpm install
 pnpm build
 ```

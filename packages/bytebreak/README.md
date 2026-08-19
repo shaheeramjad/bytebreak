@@ -1,5 +1,9 @@
 # ByteBreak
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shaheeramjad/bytebreak/main/demo/logo-banner.png" alt="ByteBreak — the entertainment layer for developers" width="720" />
+</p>
+
 **The entertainment layer for developers.**
 
 Turn AI limits and long waits into 90-second engineering games — in your terminal.
@@ -25,7 +29,7 @@ npm install -g bytebreak
 
 First run creates `~/.bytebreak`, starts a background daemon, installs shell hooks, and starts a game. No config files to edit. No API keys.
 
-**Version:** see `bytebreak version` (package `0.1.4+`).
+**Version:** see `bytebreak version` (package `0.1.5+`).
 
 ## Commands
 
@@ -85,5 +89,6 @@ Source code is never collected or uploaded. Anonymous play by default. Shell hoo
 
 ## Links
 
-- npm: https://www.npmjs.com/package/bytebreak  
-- Source monorepo docs: see repository `README.md` and `docs/`
+- npm: https://www.npmjs.com/package/bytebreak
+- Source: https://github.com/shaheeramjad/bytebreak
+- Docs: see repository `README.md` and `docs/`

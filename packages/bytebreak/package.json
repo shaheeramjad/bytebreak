@@ -1,6 +1,6 @@
 {
   "name": "bytebreak",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The entertainment layer for developers — install and play instantly",
   "type": "module",
   "bin": {
@@ -22,9 +22,15 @@
     "coding-games"
   ],
   "license": "MIT",
+  "author": "shaheeramjad",
+  "homepage": "https://github.com/shaheeramjad/bytebreak#readme",
+  "bugs": {
+    "url": "https://github.com/shaheeramjad/bytebreak/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bytebreak/bytebreak"
+    "url": "git+https://github.com/shaheeramjad/bytebreak.git",
+    "directory": "packages/bytebreak"
   },
   "engines": {
     "node": ">=20"

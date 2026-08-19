@@ -1,0 +1,70 @@
+$ bytebreak version
+0.1.4
+
+$ bytebreak doctor
+
+  Healthy
+
+  ✓ Node.js: Node v22.23.2
+  ✓ ByteBreak home: /tmp/bb-demo-video-164274
+  ✓ Daemon: Running (pid 164304)
+  ✓ IPC socket: /tmp/bb-demo-video-164274/daemon.sock
+  ✓ Git: Detected
+  ✓ Docker: Detected
+  ✓ AI coding tools: Found: claude-code, codex-cli, grok-cli, cursor-cli
+  ✓ Editors: Found: vscode, cursor
+  ✓ Event engine: 8 detectors loaded
+  ✓ Identity: Anonymous (Dev-4C12)
+  ✓ Privacy: Source code is never collected or uploaded
+
+  {"version":"0.1.4","platform":"linux","arch":"x64","shell":"bash","node":"v22.23.2","home":"/tmp/bb-demo-video-164274"}
+
+
+$ bytebreak limit
+  ⚡ Suggestion posted.
+  It will appear on your next shell prompt, or run: bytebreak
+
+
+$ bytebreak hook peek
+
+[35m  ⚡ ByteBreak[0m
+[1m  Your AI agent is sleeping 😴[0m
+[2m  Rate limit or wait — ready for a 90-second battle?[0m
+[36m  → run [1mbytebreak[0m[36m for a 90s battle[0m
+
+$ printf '1\nmutable default\n' | bytebreak -l python
+
+  Bug Blitz
+  Mutable default argument · python
+  ────────────────────────────────────────
+  1  def append_item(item, items=[]):
+  2      items.append(item)
+  3      return items
+  4  
+  5  print(append_item(1))
+  6  print(append_item(2))
+  ────────────────────────────────────────
+  Session 67c1ed86…
+
+  Bug line number(s), comma-separated: 1
+  Short explanation (optional): mutable default
+
+  ✓ +110 XP  ·  100 pts  ·  PERFECT
+  Total XP: 110 · Intern · streak 1
+
+  Play again:  bytebreak
+  Other games: bytebreak play output-rush | sql-sprint | docker-dash | git-arena
+
+
+$ bytebreak games
+bug-blitz        Bug Blitz  Find the bug in a snippet before the clock hits zero.
+                  languages: javascript, typescript, python, go, rust, java, csharp, sql, docker, yaml · default 90s
+output-rush      Output Rush  Guess what the code prints — race the clock.
+                  languages: javascript, typescript, python, go, rust · default 90s
+sql-sprint       SQL Sprint  Spot the anti-pattern and pick the optimized query.
+                  languages: sql · default 90s
+docker-dash      Docker Dash  Fix the broken Dockerfile before the build finishes.
+                  languages: docker · default 120s
+git-arena        Git Arena  Resolve the merge conflict correctly.
+                  languages: javascript, typescript, yaml · default 90s
+Daemon stopped.

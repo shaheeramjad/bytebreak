@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 240" role="img" aria-label="ByteBreak">
+  <title>ByteBreak</title>
+  <rect width="980" height="240" fill="#08090d"/>
+  <defs>
+    <linearGradient id="bg" x1="18%" y1="8%" x2="82%" y2="100%">
+      <stop offset="0%" stop-color="#2c1850"/>
+      <stop offset="46%" stop-color="#15102c"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="22%" cy="12%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="82%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="52%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bolt" x1="30%" y1="4%" x2="78%" y2="98%">
+      <stop offset="0%" stop-color="#f8f0ff"/>
+      <stop offset="32%" stop-color="#e9d5ff"/>
+      <stop offset="62%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0.78 0 0 0 0.22  0 0.42 0 0 0.10  0 0 1 0 0.48  0 0 0 0.75 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <mask id="break">
+      <rect width="512" height="512" fill="white"/>
+      <g transform="translate(256 268) rotate(-22)">
+        <rect x="-220" y="-9" width="440" height="18" rx="2" fill="black"/>
+      </g>
+    </mask>
+  </defs>
+
+  <!-- Mark -->
+  <svg x="0" y="0" width="240" height="240" viewBox="0 0 512 512">
+    <rect width="512" height="512" rx="118" fill="url(#bg)"/>
+    <rect width="512" height="512" rx="118" fill="url(#shine)"/>
+    <rect width="512" height="512" rx="118" fill="url(#cyanGlow)"/>
+    <rect x="2.5" y="2.5" width="507" height="507" rx="116" fill="none" stroke="#c084fc" stroke-opacity="0.20" stroke-width="3"/>
+    <g filter="url(#glow)" mask="url(#break)">
+      <path fill="url(#bolt)" d="M286 74 L164 258 H252 L196 440 L356 224 H266 Z"/>
+    </g>
+  </svg>
+
+  <!-- Wordmark (raster PNGs are the source of truth for type; this SVG uses Outfit when available) -->
+  <text x="276" y="158"
+        font-family="Outfit, Inter, ui-sans-serif, system-ui, sans-serif"
+        font-size="118" font-weight="750" letter-spacing="-5.2">
+    <tspan fill="#f8fafc">Byte</tspan><tspan fill="#c084fc">Break</tspan>
+  </text>
+</svg>

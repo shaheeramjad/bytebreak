@@ -49,3 +49,6 @@ coverage/
 .cache/
 tmp/
 temp/
+
+# Generated demo video frames
+demo/frames/

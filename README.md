@@ -1,5 +1,9 @@
 # ByteBreak
 
+<p align="center">
+  <img src="demo/logo-banner.png" alt="ByteBreak — the entertainment layer for developers" width="720" />
+</p>
+
 **The entertainment layer for developers.**
 
 > Steam + Discord + Chess.com — for software engineers.
@@ -19,7 +23,7 @@ npx bytebreak
 
 **That starts a game.** First run auto-detects your environment, starts a silent daemon, installs shell hooks, and drops you into play. No IDE extension. No API keys. No manual config.
 
-**Current release:** `0.1.4` on [npm](https://www.npmjs.com/package/bytebreak)
+**Current release:** `0.1.5` on [npm](https://www.npmjs.com/package/bytebreak) · [source](https://github.com/shaheeramjad/bytebreak)
 
 ---
 
@@ -169,7 +173,7 @@ Streaks update when you play on consecutive days.
 
 ```bash
 # Node 20+, pnpm 9+
-git clone <repo> && cd ByteBreak
+git clone https://github.com/shaheeramjad/bytebreak.git && cd bytebreak
 pnpm install
 pnpm build
 pnpm install:global    # bundle + npm install -g to ~/.local
@@ -219,7 +223,7 @@ npm does **not** allow re-publishing the same version. Bump first.
 pnpm install && pnpm build
 pnpm --filter bytebreak build
 cd packages/bytebreak
-# ensure package.json version is new (e.g. 0.1.4)
+# ensure package.json version is new (e.g. 0.1.5)
 npm publish --access public
 # with 2FA:
 npm publish --access public --otp=XXXXXX
